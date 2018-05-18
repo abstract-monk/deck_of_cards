@@ -32,8 +32,17 @@ public class Deck {
         return deck.size();
     }
 
+    // gets a card from the deck without removing it
     public Card getCard() {
-        return deck.get(cardIndex++);
+        return deck.get(cardIndex);
     }
+    
+    // gets and removes card from top of the deck
+    public Card drawCard() {
+        Card c = getCard();
+        deck.remove(cardIndex);
+        return c;
+    }
+    
 }
 

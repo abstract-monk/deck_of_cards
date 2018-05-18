@@ -31,5 +31,9 @@ public class Deck {
     public int getSize() {
         return deck.size();
     }
+
+    public Card getCard() {
+        deck.get(cardIndex++);
+    }
 }
 

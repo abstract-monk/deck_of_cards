@@ -7,7 +7,7 @@ import java.util.ArrayList;
 
 public class Deck {
     
-    private static List<Card> defaultDeck;
+    private static List<Card> defaultDeck = new ArrayList<Card>();
     
     static {
         for (Card.Suit suit : Card.Suit.values()) {

@@ -25,7 +25,9 @@ public class Deck {
     }
 
     public Deck(List<Card> cards) {
-
+        deck = new ArrayList<>();
+        deck.addAll(cards);
+        cardIndex = 0;
     }
 
     public int getSize() {

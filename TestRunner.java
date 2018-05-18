@@ -14,6 +14,7 @@ public class TestRunner {
         printSize(deck1);
         System.out.println("Printing size of deck2: ");
         printSize(deck2);
+
         // get a card from top of the deck1 and print it
         printCard(deck1);
 
@@ -23,6 +24,8 @@ public class TestRunner {
 
         // test deck1 and and deck2 aren't equal after shuffling deck1
         // if equal print True, if not equal print false
+        System.out.println("Test if deck1 and deck2 are equal: ");
+        areDecksEqual(deck1, deck2);
 
         // draw card from top of deck and print it showing size of deck
         // before and after drawing occurs
@@ -36,7 +39,7 @@ public class TestRunner {
     
     public static void printCard(Deck d) {
         Card c = d.getCard();
-        System.out.println("The " + c + "is the next card in the deck");
+        System.out.println("The " + c + " is the next card in the deck");
     }
 
     public static void drawAndPrintCard(Deck d) {
@@ -47,5 +50,8 @@ public class TestRunner {
         printSize(d);
     }
 
+    public static void areDecksEqual(Deck d1, Deck d2) {
+        System.out.println(d1.equals(d2));
+    }
 
 }

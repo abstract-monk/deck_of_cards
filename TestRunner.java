@@ -31,6 +31,10 @@ public class TestRunner {
         // before and after drawing occurs
         drawAndPrintCard(deck1);
 
+        // draw cards from top of the deck until the deck is empty
+        System.out.println("Begin drawing all cards test: ");
+        drawAllCards(deck2);
+
     }
 
     public static void printSize(Deck d) {
@@ -52,6 +56,12 @@ public class TestRunner {
 
     public static void areDecksEqual(Deck d1, Deck d2) {
         System.out.println(d1.equals(d2));
+    }
+    
+    public static void drawAllCards(Deck d) {
+        while(d.getSize() != 0) {
+            drawAndPrintCard(d);
+        }
     }
 
 }

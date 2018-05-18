@@ -12,4 +12,12 @@ public class Card {
         HEARTS, DIAMOND, CLUBS, SPADES
     }
 
+    private final Rank rank;
+    private final Suit suit;
+
+    Card(Rank rank, Suit suit) {
+        this.rank = rank;
+        this.suit = suit;
+    }
+
 }

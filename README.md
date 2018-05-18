@@ -14,5 +14,6 @@ You can draw cards one at a time until the Deck is empty.
 The Suits are: Hearts, Diamonds, Clubs, and Spades
 The Ranks are: Ace, King, Queen, Jack, 10, 9, 8, 7, 6, 5, 4, 3, 2
 
-Also included is a Test class with unit tests, whose purpose is to
-test the 'shuffle' and 'draw a card' functions.
+Also included TestRunner class that runs some pretty basic test methods.
+
+Can be improved by writing a real Test class using JUnit testing.

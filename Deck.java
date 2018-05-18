@@ -8,6 +8,8 @@ import java.util.ArrayList;
 public class Deck {
     
     private static List<Card> defaultDeck = new ArrayList<Card>();
+    private List<Card>        deck;
+    private int               cardIndex;
     
     static {
         for (Card.Suit suit : Card.Suit.values()) {
@@ -18,7 +20,8 @@ public class Deck {
     }
 
     public Deck() {
-    
+        deck = new ArrayList<>(defaultDeck);
+        cardIndex = 0;
     }
 
     public Deck(List<Card> cards) {

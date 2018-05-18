@@ -33,7 +33,7 @@ public class Deck {
     }
 
     public Card getCard() {
-        deck.get(cardIndex++);
+        return deck.get(cardIndex++);
     }
 }
 

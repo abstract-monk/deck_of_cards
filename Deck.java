@@ -6,11 +6,19 @@ import java.util.List;
 import java.util.ArrayList;
 
 public class Deck {
-  
-    private List<Card> deck;
+    
+    private static List<Card> defaultDeck;
+    
+    static {
+        for (Card.Suit suit : Card.Suit.values()) {
+            for (Card.Rank rank : Card.Rank.values()) {
+                defaultDeck.add(new Card(rank, suit));                   
+            }
+        }
+    }
 
     public Deck() {
-
+    
     }
 
     public Deck(List<Card> cards) {

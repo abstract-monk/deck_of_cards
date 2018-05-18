@@ -23,5 +23,9 @@ public class CardDeckTest {
     public void shuffleTest() {
         
     }
-
+    
+    @Test
+    public void drawAllCardsTest() {
+        
+    }
 }

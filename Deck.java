@@ -43,6 +43,10 @@ public class Deck {
         deck.remove(cardIndex);
         return c;
     }
+
+    public void shuffle() {
+        Collections.shuffle(deck);
+    }
     
 }
 

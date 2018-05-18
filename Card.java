@@ -20,9 +20,9 @@ public class Card {
         this.suit = suit;
     }
     
-    public Rank getRank() { return rank; }
-    public Suit getSuit() { return suit; }
-    public toString() {
+    public Rank   getRank() { return rank; }
+    public Suit   getSuit() { return suit; }
+    public String toString() {
         return rank + " of " + suit;
     }
 }

@@ -3,16 +3,26 @@ public class TestRunner {
     
     public static void main(String[] args) {
         
-        // create new deck and test it has 52 cards
+        // create new deck
         Deck deck1 = new Deck();
+        
+        // create copy of deck1 into new deck called deck2
+        Deck deck2 = new Deck(deck1);
+        
+        // check that deck1 has 52 cards
+        System.out.println("Printing size of deck1: ");
         printSize(deck1);
-
-        // get a card from top of the deck and print it
+        System.out.println("Printing size of deck2: ");
+        printSize(deck2);
+        // get a card from top of the deck1 and print it
         printCard(deck1);
 
         // shuffle deck1 and printCard
         deck1.shuffle();
         printCard(deck1);
+
+        // test deck1 and and deck2 aren't equal after shuffling deck1
+        // if equal print True, if not equal print false
 
         // draw card from top of deck and print it showing size of deck
         // before and after drawing occurs
@@ -36,4 +46,6 @@ public class TestRunner {
         System.out.println("The " + c + " was drawn.");
         printSize(d);
     }
+
+
 }

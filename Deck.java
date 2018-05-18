@@ -24,9 +24,9 @@ public class Deck {
         cardIndex = 0;
     }
 
-    public Deck(List<Card> cards) {
+    public Deck(Deck cards) {
         deck = new ArrayList<>();
-        deck.addAll(cards);
+        deck.addAll(cards.deck);
         cardIndex = 0;
     }
 

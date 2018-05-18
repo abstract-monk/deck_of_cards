@@ -27,5 +27,9 @@ public class Deck {
     public Deck(List<Card> cards) {
 
     }
+
+    public int getSize() {
+        return deck.size();
+    }
 }
 

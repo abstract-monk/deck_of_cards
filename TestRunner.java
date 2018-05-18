@@ -5,10 +5,10 @@ public class TestRunner {
         
         // create new deck and test it has 52 cards
         Deck deck1 = new Deck();
-        printSize();
+        printSize(deck1);
     }
 
-    public void printSize(Deck d) {
+    public static void printSize(Deck d) {
         System.out.println(d.getSize());
     }
 

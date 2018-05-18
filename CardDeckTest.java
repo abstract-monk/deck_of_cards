@@ -8,5 +8,16 @@ import org.junit.Test;
 
 public class CardDeckTest {
 
+    private Deck deck1;
+    private Deck deck2;
+    private Card card;
+
+    @Before
+    deck1 = new Deck()
+
+    @Test
+    public void shuffleTest() {
+         
+    }
 
 }
